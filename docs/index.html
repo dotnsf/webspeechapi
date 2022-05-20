@@ -18,7 +18,7 @@ var flag_speech = 0;
 
 function vr_function() {
     window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
-    var recognition = new webkitSpeechRecognition();
+    var recognition = new SpeechRecognition(); //webkitSpeechRecognition();
     recognition.lang = 'ja';
     recognition.interimResults = true;
     recognition.continuous = true;
